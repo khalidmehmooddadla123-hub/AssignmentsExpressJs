@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Books API Frontend</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1> Books API Frontend</h1>
+
+    <section class="card">
+      <h2>Add New Book</h2>
+      <form id="bookForm">
+        <div class="grid">
+          <input type="text" id="title" placeholder="Title" required />
+          <input type="text" id="author" placeholder="Author" required />
+          <input type="number" id="year" placeholder="Year" min="1" required />
+          <input type="text" id="genre" placeholder="Genre" required />
+          <input type="number" id="pages" placeholder="Pages" min="1" required />
+        </div>
+        <button type="submit">Add Book</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>All Books</h2>
+      <div class="table-wrapper">
+        <table id="booksTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>Year</th>
+              <th>Genre</th>
+              <th>Pages</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="booksBody">
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
